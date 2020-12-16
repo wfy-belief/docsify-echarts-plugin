@@ -38,72 +38,89 @@
       ],
       "series": [
         {
-          "type": "effectScatter",
+          "type": "bar",
+          "name": "A",
           "coordinateSystem": "polar",
-          "showEffectOn": "render",
-          "rippleEffect": {
-            "show": true,
-            "brushType": "stroke",
-            "scale": 10,
-            "period": 5
-          },
           "symbolSize": 4,
           "data": [
-            [
-              0,
-              19
-            ],
-            [
-              1,
-              6
-            ],
-            [
-              2,
-              52
-            ],
-            [
-              3,
-              38
-            ],
-            [
-              4,
-              100
-            ],
-            [
-              5,
-              34
-            ],
-            [
-              6,
-              17
-            ],
-            [
-              7,
-              49
-            ],
-            [
-              8,
-              51
-            ],
-            [
-              9,
-              29
-            ]
+            1,
+            2,
+            3,
+            4,
+            3,
+            5,
+            1
           ],
+          "stack": "stack0",
           "label": {
             "show": false,
             "position": "top",
             "margin": 8
+          },
+          "areaStyle": {
+            "opacity": 0
+          }
+        },
+        {
+          "type": "bar",
+          "name": "B",
+          "coordinateSystem": "polar",
+          "symbolSize": 4,
+          "data": [
+            2,
+            4,
+            6,
+            1,
+            2,
+            3,
+            1
+          ],
+          "stack": "stack0",
+          "label": {
+            "show": false,
+            "position": "top",
+            "margin": 8
+          },
+          "areaStyle": {
+            "opacity": 0
+          }
+        },
+        {
+          "type": "bar",
+          "name": "C",
+          "coordinateSystem": "polar",
+          "symbolSize": 4,
+          "data": [
+            1,
+            2,
+            3,
+            4,
+            1,
+            2,
+            5
+          ],
+          "stack": "stack0",
+          "label": {
+            "show": false,
+            "position": "top",
+            "margin": 8
+          },
+          "areaStyle": {
+            "opacity": 0
           }
         }
       ],
       "legend": [
         {
           "data": [
-            ""
+            "A",
+            "B",
+            "C"
           ],
           "selected": {
-            "": true
+            "A": true,
+            "B": true,
+            "C": true
           },
           "show": true,
           "padding": 5,
@@ -133,7 +150,17 @@
         "scale": false
       },
       "angleAxis": {
+        "data": [
+          "周一",
+          "周二",
+          "周三",
+          "周四",
+          "周五",
+          "周六",
+          "周日"
+        ],
         "clockwise": false,
+        "type": "category",
         "scale": false,
         "splitNumber": 5
       },
@@ -142,7 +169,7 @@
       },
       "title": [
         {
-          "text": "Polar-EffectScatter",
+          "text": "Polar-AngleAxis",
           "padding": 5,
           "itemGap": 10
         }
