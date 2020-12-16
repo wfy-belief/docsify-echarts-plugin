@@ -1,5 +1,175 @@
 # docsify-echarts-plugin
 
+```charts
+{
+      "backgroundColor": "#ceefe4",
+      "animation": true,
+      "animationThreshold": 2000,
+      "animationDuration": 1000,
+      "animationEasing": "cubicOut",
+      "animationDelay": 0,
+      "animationDurationUpdate": 300,
+      "animationEasingUpdate": "cubicOut",
+      "animationDelayUpdate": 0,
+      "series": [
+        {
+          "type": "bar",
+          "name": "商家A",
+          "legendHoverLink": true,
+          "data": [
+            42,
+            21,
+            19,
+            30,
+            28,
+            78
+          ],
+          "showBackground": false,
+          "barMinHeight": 0,
+          "barCategoryGap": "20%",
+          "barGap": "30%",
+          "large": false,
+          "largeThreshold": 400,
+          "seriesLayoutBy": "column",
+          "datasetIndex": 0,
+          "clip": true,
+          "zlevel": 0,
+          "z": 2,
+          "label": {
+            "show": true,
+            "position": "top",
+            "margin": 8
+          }
+        },
+        {
+          "type": "bar",
+          "name": "商家B",
+          "legendHoverLink": true,
+          "data": [
+            26,
+            57,
+            30,
+            13,
+            39,
+            96
+          ],
+          "showBackground": false,
+          "barMinHeight": 0,
+          "barCategoryGap": "20%",
+          "barGap": "30%",
+          "large": false,
+          "largeThreshold": 400,
+          "seriesLayoutBy": "column",
+          "datasetIndex": 0,
+          "clip": true,
+          "zlevel": 0,
+          "z": 2,
+          "label": {
+            "show": true,
+            "position": "top",
+            "margin": 8
+          }
+        }
+      ],
+      "legend": [
+        {
+          "data": [
+            "商家A",
+            "商家B"
+          ],
+          "selected": {
+            "商家A": true,
+            "商家B": true
+          },
+          "show": true,
+          "padding": 5,
+          "itemGap": 10,
+          "itemWidth": 25,
+          "itemHeight": 14
+        }
+      ],
+      "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+          "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+          "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+      },
+      "xAxis": [
+        {
+          "show": true,
+          "scale": false,
+          "nameLocation": "end",
+          "nameGap": 15,
+          "gridIndex": 0,
+          "inverse": false,
+          "offset": 0,
+          "splitNumber": 5,
+          "minInterval": 0,
+          "splitLine": {
+            "show": false,
+            "lineStyle": {
+              "show": true,
+              "width": 1,
+              "opacity": 1,
+              "curveness": 0,
+              "type": "solid"
+            }
+          },
+          "data": [
+            "衬衫",
+            "羊毛衫",
+            "雪纺衫",
+            "裤子",
+            "高跟鞋",
+            "袜子"
+          ]
+        }
+      ],
+      "yAxis": [
+        {
+          "show": true,
+          "scale": false,
+          "nameLocation": "end",
+          "nameGap": 15,
+          "gridIndex": 0,
+          "inverse": false,
+          "offset": 0,
+          "splitNumber": 5,
+          "minInterval": 0,
+          "splitLine": {
+            "show": false,
+            "lineStyle": {
+              "show": true,
+              "width": 1,
+              "opacity": 1,
+              "curveness": 0,
+              "type": "solid"
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "padding": 5,
+          "itemGap": 10
+        }
+      ]
+    }
+```
+
+
+
 ### default display
 
 ```chart
